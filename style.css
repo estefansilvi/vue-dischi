@@ -19,9 +19,9 @@ body {
 header {
     width: 100%;
     height: 70px;
-    background: rgb(46, 58, 70);
+    background: darkblue;
 }
-header img {
+ img.logo{
     height: 50px;
     margin-top: 10px;
 }
@@ -39,15 +39,15 @@ header img {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    flex-basis: 200px;
+    flex-basis: 230px;
     padding: 20px;
     margin: 10px 20px;
-    height: 360px;
-    background: rgb(46, 58, 70);
+    height: 440px;
+    background: black;
     text-align: center;
 }
 
-.cd img {
+ img.cover{
     max-width: 100%;
 }
 

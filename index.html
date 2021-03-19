@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>ex-dischi-musicali</title>
+        <title>Libreria dischi</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
@@ -13,14 +13,14 @@
     <body>
         <header>
             <div  class="container">
-                <img src="logo.png" alt="logo" />
+                <img class="logo" src="logo.png" alt="logo" />
             </div>
         </header>
 
         <div class="cds-container container" id="root">
             <!-- Disco ad esempio -->
             <div v-for="dischi in elencoDischi" class="cd">
-                <img :src="dischi.poster" alt="">
+                <img class="cover" :src="dischi.poster" alt="">
                 <h3 class="cd">{{ dischi.title}}</h3>
                 <span class="author">{{dischi.author}}</span>
                 <span class="year">{{dischi.year}}</span>
